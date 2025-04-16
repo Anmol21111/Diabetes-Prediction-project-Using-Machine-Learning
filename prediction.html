@@ -1,0 +1,82 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result - Diabetes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #80deea);
+      margin: 0;
+      padding: 40px;
+    }
+
+    .form-container {
+      max-width: 500px;
+      background-color: #ffffff;
+      margin: auto;
+      border-radius: 16px;
+      padding: 30px 40px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #00796b;
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .result {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #f1fdfd;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #004d40;
+    }
+
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Prediction Result</h2>
+    <div class="result">{{ prediction_output }}</div>
+    <a href="/" class="back-button">Back to Form</a>
+  </div>
+
+</body>
+</html>
